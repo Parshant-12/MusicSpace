@@ -1,0 +1,27 @@
+.flex{
+    display:flex;
+}
+.justify-content{
+    justify-content: center;
+}
+.align-item{
+    align-items: center;
+}
+.invert{
+    filter: invert(0.7);
+}
+.invertfull{
+    filter: invert(1);
+}
+.gap{
+    gap: 10px;
+}
+.gapplus{
+    gap: 15px;
+}
+.small{
+    width: 16px;
+}
+.flex-direction-column{
+    flex-direction: column;
+}

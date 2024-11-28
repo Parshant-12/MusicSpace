@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="img/logo.svg" alt="logo"></a>
+        </div>
+        <div class="center-element">
+            <div class="main-center-content flex">
+                <button class="home-btn">
+                    <div class="invert"><img src="img/home.svg" alt="home"></div>
+                </button>
+                <div class="center-content">
+                    <div class="search"><img src="img/search.svg" alt="search" style="width: 24px;"></div>
+                    <input type="text" placeholder="What do you want to play?">
+                    <div class="browse-icon-line">
+                        <div class="browse"><img src="img/browse.svg" alt="browse" style="width: 24px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="signup-login">
+            <button class="btn-0 signup">Sign up</button>
+            <button class="btn">Log in</button>
+            <img id="menu-btn" src="img/hamburger.svg" alt="menu" class="invert">
+        </div>
+    </nav>
+    <div class="container flex">
+        <div class="left">
+            <div class="library">
+                <div class="part1">
+                    <div class="flex justify-content align-item gap">
+                        <img src="img/libraray.svg" alt="library" class="invert">
+                        <h3>Your Library</h3>
+                    </div>
+                    <div class="add">
+                        <img src="img/add.svg" alt="add-playlist" class="invert">
+                    </div>
+                </div>
+            </div>
+            <div class="under-library">
+                <div class="songs-list">
+                    <!-- <div class="sl">
+                        <div class="library-song-img">
+                            <img src="audioicon.svg" alt="audio-icon" class="invert">
+                        </div>
+                        <div class="sec1-content">
+                            <span class="span1">Song name</span>
+                            <span class="span2">Author</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="footer">
+                <ul class="flex gapplus">
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Safety & Privacy Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+                <ul class="footer-l-2 flex gapplus">
+                    <li><a href="#">About Ads</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+                <div><a href="#">© 2024 Parshant | All rights reserved.</a></div>
+                <div class="language">
+                    <div class="contact">Any Suggestions?</div>
+                    <button class="contact-btn">
+                        <a href="contact-parshant.html"><img src="img/contact.svg" alt="globe-icon" class="invertfull small"></a>
+                        <div>Contact</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="heading">
+                <h1>Playlists</h1>
+            </div>
+            <div class="card-container">
+                <!-- <div class="card">
+                    <div data-folder="" class="play">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02e17498b2a89c000a29bbd209" alt="music-tagimg">
+                        <button><img src="img/play.svg" alt="play"></button>
+                    </div>
+                    <div class="title">Past Lives</div>
+                    <div class="time">
+                        2023 • Album
+                    </div>
+                </div> -->
+            </div>
+            <div class="play-bar">
+                <div class="bar-info">
+                    <div class="Song-name"></div>
+                    <div class="song-controls">
+                        <button class="song-play previous-play"><img src="img/previous-song.svg" alt="previous-button"
+                                class="invert"></button>
+                        <button class="song-play PLAY"><img id="PL" src="img/play.svg" alt="play"></button>
+                        <button class="song-play next-play"><img src="img/next-song.svg" alt="next-button"
+                                class="invert"></button>
+                    </div>
+                    <div id="volume">
+                        <div class="Song-time"></div>
+                        <div class="vol">
+                            <img class="invert" src="img/volume-btn.svg" alt="">
+                            <input type="range" name="range">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-content">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
