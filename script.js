@@ -18,7 +18,7 @@ function secondsToMinutesSeconds(seconds) {
 async function getSongs(folder) {
     currFolder = folder;
     // console.log(folder)
-    let a = await fetch(`/${folder}/`)
+    let a = await fetch(`http://192.168.18.81:5500/${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -61,7 +61,7 @@ async function getSongs(folder) {
 
 async function playFirstSong(folder) {
     console.log("Playing the first song from folder:", folder);
-    let a = await fetch(`/songs/${folder}/`);
+    let a = await fetch(`http://192.168.18.81:5500/songs/${folder}/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -84,7 +84,7 @@ async function playFirstSong(folder) {
 }
 
 const playmusic = (track, pause = false) => {
-    currsong.src = `/${currFolder}/` + track
+    currsong.src = `http://192.168.18.81:5500/${currFolder}/` + track
     if (!pause) {
         currsong.play()
         PL.src = "img/pause.svg"
@@ -95,7 +95,7 @@ const playmusic = (track, pause = false) => {
 
 async function displayAlbums() {
     // console.log("Displaying albums...");
-    let a = await fetch(`/songs`);
+    let a = await fetch(`http://192.168.18.81:5500/songs`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
