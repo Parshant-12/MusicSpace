@@ -84,7 +84,7 @@ async function playFirstSong(folder) {
 }
 
 const playmusic = (track, pause = false) => {
-    currsong.src = `http://192.168.18.81:5500/${currFolder}/` + track
+    currsong.src = `/${currFolder}/` + track
     if (!pause) {
         currsong.play()
         PL.src = "img/pause.svg"
@@ -95,7 +95,7 @@ const playmusic = (track, pause = false) => {
 
 async function displayAlbums() {
     // console.log("Displaying albums...");
-    let a = await fetch(`http://192.168.18.81:5500/songs`);
+    let a = await fetch(`/songs`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -267,3 +267,4 @@ async function main() {
 }
 
 main();
+
